@@ -1,0 +1,142 @@
+.container{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px 100px 50px 91px;
+box-sizing: border-box;
+}
+.wrapper{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEF3F7;
+    padding: 90px 100px 0px 91px;
+}
+.firstRow{
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+}
+.content{
+width: 39%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.heading{
+    color: #1e1666;
+    font-family: "Nunito";
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: bolder;
+    margin-top: 0;
+}
+.body{
+    font-family: "Nunito";
+    color: #57647c;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.subHeading{
+    color: #1e1666;
+    font-family: "Nunito";
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: bolder;
+    margin: 0;
+}
+.logoContainer{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    width:70px;
+    height:70px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+.imageContainer{
+width: 40%;
+height: 425px;
+}
+.image{
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+.secondRow{
+width: 100%;
+}
+.secondRowImage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (min-width:768px) and (max-width: 1200px) {}
+
+@media (min-width:576px) and (max-width: 768px) {
+.container {
+    padding: 0px;
+  }
+  .wrapper{
+    width: 100%;
+    padding: 40px;
+  }
+  .firstRow{
+    flex-direction: column-reverse;
+  }
+  .imageContainer{
+    width: 100%;
+  }
+  .content{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .logoContainer{
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  .container{
+    padding: 0px;
+  }
+  .wrapper {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .firstRow {
+      flex-direction: column-reverse;
+    }
+  
+    .imageContainer {
+      width: 100%;
+    }
+  
+    .content {
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .logoContainer {
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+}

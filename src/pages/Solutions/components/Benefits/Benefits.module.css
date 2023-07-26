@@ -1,0 +1,126 @@
+.container {
+    height: 590px;
+    width: 100%;
+    position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    /* background-color: rgba(0,0,0,0.5); */
+}
+
+.backgroundImgWrapper{
+    background-image: url('./../../../../assets/Solutions/benefitsCover.jpeg');
+    width: 100%;
+    min-height: 520px;
+    top: 0;
+    left: 0;
+    z-index: -3121;
+    background-color: black;
+    background-color: rgba(0,0,0,0.5) ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading {
+    color: #FFFFFF;
+    font-family: "Nunito";
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+    width: 700px;
+    text-align: center;
+}
+
+.contentSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefitsCard {
+    height: 300px;
+    width: 260px;
+    background-color: #080C2D;
+    color: #FFF;
+    margin-right: 30px;
+    border-radius: 30px;
+    border: 2px solid #FFF;
+}
+
+.cardHeading {
+    margin-top: 60px;
+    margin-left: 20px;
+    color: #FFFFFF;
+    /* font-family: 'Nunito'; */
+    line-height: 12px;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.cardList {
+font-size: 18px;
+font-family: 'Nunito';
+    line-height: 28px;
+    font-weight: 400;
+    font-style: normal;
+}
+.cardListItem{
+    font-size: 13px;
+    list-style-type: disc;
+    margin-left: 30px;
+}
+  @media (min-width:768px) and (max-width: 1200px) {}
+
+  @media (min-width:576px) and (max-width: 768px) {
+    .container{
+        height: 100%;
+        padding: 20px 0px;
+        box-sizing: border-box;
+    }
+    .heading{
+        width: 90%;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .contentSection{
+        justify-content: center;
+    }
+    .benefitsCard{
+        width: 90%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .container {
+            height: 100%;
+            padding: 20px 0px;
+            box-sizing: border-box;
+        }
+    
+        .heading {
+            width: 90%;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    
+        .contentSection {
+            justify-content: center;
+        }
+    
+        .benefitsCard {
+            width: 90%;
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+  }

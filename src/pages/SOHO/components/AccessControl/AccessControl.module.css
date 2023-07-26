@@ -1,0 +1,91 @@
+.container{
+width: 100%;
+/* height: 700px; */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #000000;
+padding: 20px 0px;
+margin: 40px 0px;
+}
+.wrapper{
+width: 90%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px 0px;
+
+}
+.heading{
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Nunito";
+    font-weight: 800;
+}
+.subHeading{
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 56px;
+    font-family: "Nunito";
+    font-weight: 700;
+}
+.grid{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+flex-wrap: wrap;
+}
+.card{
+    width: 380px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 34px 18px 32px 18px;
+    background-color: #FFFFFF12;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 2.5px 2.5px 22px 7px rgba(96.00000000000018, 40, 172, 0.85);
+}
+.cardHeading{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+    font-weight: 800;
+}
+.cardBody{
+    color: #FFFFFF85;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+@media (min-width:768px) and (max-width: 1200px) {}
+
+@media (min-width:576px) and (max-width: 768px) {
+    .card{
+        width: 90%;
+        height: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .wrapper{
+        width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+    }
+    .card {
+            width: 90%;
+        height: 100%;
+        }
+        .heading{
+            margin-bottom: 0px;
+        }
+        .subHeading{
+            line-height: normal;
+        }
+}

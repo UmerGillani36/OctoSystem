@@ -1,0 +1,69 @@
+.container{
+  width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.wrapper{
+  width: 90%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.heading{
+    font-size: 36px;
+    line-height: 48px;
+    color: #1e1666;
+    font-family: "Nunito";
+    font-weight: 800;
+    margin: 0px;
+
+
+}
+.subHeading{
+ font-size: 18px;
+    line-height: 30px;
+    color: #57647c;
+    font-family: "Nunito";
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    margin-top: 20px;
+}
+@media (min-width:768px) and (max-width: 1200px) {}
+@media (min-width:576px) and (max-width: 768px) {
+  
+  .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100%, 1fr));
+    margin-top: 20px;
+  }
+  .wrapper{
+    padding: 0px 20px;
+    width: 100%;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100%, 1fr));
+    margin-top:20px;
+}
+    .wrapper {
+      padding: 0px 20px;
+      width: 100%;
+    }
+}
+
+
+

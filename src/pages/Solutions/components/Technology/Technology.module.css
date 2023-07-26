@@ -1,0 +1,145 @@
+
+.container {
+width: 100%;
+margin: 160px auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.imageSection {
+width: 40%;
+}
+
+.technologyHeading {
+    width: 250px;
+    color: #1e1666;
+    font-family: "Nunito";
+    color: #1e1666;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+}
+
+.imageBox {
+    animation: MoveCircleSmall 5s linear infinite;
+    animation-direction: alternate;
+}
+
+.contentSection {
+    width: 40%;
+}
+
+.sectionOne {
+    margin: 10px 0;
+    width: 420px;
+    margin-left: 180px;
+}
+
+.sectionTwo {
+    margin: 10px 0;
+    width: 420px;
+    margin-left: 120px;
+}
+
+.sectionThree {
+    margin: 10px 0;
+    width: 420px;
+    margin-left: 60px;
+}
+
+.icon {
+    font-size: 36px;
+    color: #1e1666;
+    font-family: "Nunito";
+    line-height: 48px;
+    font-weight: 800;
+    position: relative;
+}
+
+.icon img {
+    position: absolute;
+    z-index: -1;
+    left: -15px;
+    top: -10px;
+}
+
+.title {
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 40px;
+    margin: 5px 0;
+    color: #1e1666;
+}
+
+.body {
+    font-size: 15px;
+    line-height: 34px;
+    color: #57647c;
+    font-family: "Nunito";
+    font-weight: 700;
+}
+
+@keyframes MoveCircleSmall {
+    0% {
+        transform: rotate(0deg) translate(-5px) rotate(0deg);
+        -webkit-transform: rotate(0deg) translate(-5px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-5px) rotate(-360deg);
+        -webkit-transform: rotate(360deg) translate(-5px) rotate(-360deg);
+    }    
+}
+  @media (min-width:768px) and (max-width: 1200px) {}
+
+  @media (min-width:576px) and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+    .technologyHeading{
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .imageSection{
+        width: 90%;
+    }
+    .contentSection{
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .container {
+            flex-direction: column;
+        }
+    
+        .technologyHeading {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+        }
+    
+        .imageSection {
+            width: 90%;
+        }
+    
+        .contentSection {
+            width: 90%;
+        }
+        .sectionOne{
+            width: 100%;
+            margin-left: 0px;
+        }
+        .sectionTwo{
+            width: 100%;
+            margin-left: 0px;
+        }
+        .sectionThree{
+            width: 100%;
+            margin-left: 0px;
+        }
+  }

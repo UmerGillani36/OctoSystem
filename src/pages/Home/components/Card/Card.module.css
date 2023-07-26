@@ -1,0 +1,88 @@
+.card {
+    position: relative;
+    min-width: 250px;
+    min-height: 180px;
+    width: 300px;
+    height: 180px;
+    /* margin-right: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-position: 50% !important;
+    background-size: cover !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    z-index: 3;
+    /* opacity: 0.5; */
+  }
+  
+  .cardContent {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cardLogo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .cardTitle {
+    font-size: 24px;
+    color: white;
+    transition: transform 1s;
+  }
+  
+  .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transform: scale(1);
+    transition: transform 1s;
+  }
+  
+  .card:hover .cardTitle {
+    transform: scale(1.1);
+  }
+  
+  .card:hover:before {
+    transform: scale(1.1);
+  }
+  
+     @media (min-width:768px) and (max-width: 1200px) {}
+  
+     @media (min-width:576px) and (max-width: 768px) {
+       .card {
+         width: 100%;
+         height: 100%;
+         min-width: 100%;
+         min-height: 100%;
+       }
+       .cardLogo{
+            margin-top: 20px;
+       }
+     }
+  
+     @media only screen and (max-width: 576px) {
+      .card {
+          width: 100%;
+          height: 100%;
+          min-width: 100%;
+          min-height: 100%;
+        }
+      
+        .cardLogo {
+          margin-top: 20px;
+        }
+     }

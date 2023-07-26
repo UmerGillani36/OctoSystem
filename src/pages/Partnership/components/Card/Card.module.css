@@ -1,0 +1,67 @@
+.card {
+  max-width: 90%;
+  max-height: 220px;
+  padding: 50px 23px 61px 23px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 2.5px 4.33px 18px 2px rgba(201, 201, 201, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.cardHeading{
+  font-size: 26px;
+  font-family: 'Nunito';
+  line-height: 30px;
+  font-weight: 800;
+  /* font-style: normal; */
+  color: #1e1666;
+  text-align: left;
+  margin: 10px 0px;
+}
+.cardContent{
+      color: #57647c;
+      text-align: left;
+}
+
+@media only screen and (max-width: 576px) {
+  .card {
+    width: 100%;
+    /* max-width: 430px; */
+    /* max-height: 220px; */
+    padding: 50px 23px 61px 23px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 2.5px 4.33px 18px 2px rgba(201, 201, 201, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width:576px) and (max-width: 768px) {
+.card {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 50px 23px 61px 23px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 2.5px 4.33px 18px 2px rgba(201, 201, 201, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width:768px) and (max-width: 1200px) {}

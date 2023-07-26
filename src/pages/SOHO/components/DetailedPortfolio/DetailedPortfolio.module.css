@@ -1,0 +1,238 @@
+.portfolio{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px 0px;
+margin: 20px 0px;
+}
+.wrapper{
+width: 90%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.h4{
+        color: #1BB7F1;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin: 0;
+}
+
+.h1{
+    font-size: 40px;
+        line-height: 48px;
+        color: #1e1666;
+            font-family: "Nunito";
+            font-weight: 800;
+            margin: 20px 0px 0px 0px;
+}
+
+.p{
+color: #57647c;
+font-size: 18px;
+    line-height: 24px;
+    font-family: "Nunito";
+        font-weight: 700;
+        width: 50%;
+        margin-bottom: 40px;
+}
+.grid {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, minmax(210px, 1fr));
+    margin-bottom: 60px;
+}
+.card{
+    /* width: 405px;
+    height: 320px; */
+    max-width:405px;
+    max-height:320px;
+    margin-right: 10px;
+    padding: 50px 23px 61px 23px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 2.5px 4.33px 18px 2px rgba(96.00000000000018, 40, 172, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.cardHeading{
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1e1666;
+    text-align: center;
+}
+.body{
+        font-size: 15px;
+            line-height: 28px;
+                color: #57647c;
+                    text-align: center;
+}
+.iconContainer{
+    width: 78px;
+    height: 78px;
+    margin-bottom: 20px;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detailsWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+}
+.content{
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+}
+.list{
+    width: 80%;
+    display: block;
+    background: #eef3f7;
+    border-radius: 5px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    padding: 0px 20px;
+    color: #1E1666;
+    font-size: 18px;
+    line-height: 37px;
+}
+.imageContainer {
+    width: 50%;
+    position: relative;
+}
+
+.macContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.mac {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.iphone3 {
+    width: 140px;
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+}
+
+@media (min-width:768px) and (max-width: 1200px) {}
+
+@media (min-width:576px) and (max-width: 768px) {
+    .wrapper{
+        width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+    }
+    .p{
+        width: 100%;
+    }
+    .grid{
+            width: 100%;
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(1, minmax(100%, 1fr));
+                margin-bottom: 60px;
+    }
+    .card{
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .detailsWrapper{
+        width: 100%;
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        align-items: center;
+    }
+    .list{
+        width: 90%;
+    }
+    .imageContainer{
+        width: 90%;
+        margin-top: 20px;
+        margin-left: auto;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+        .wrapper {
+                width: 100%;
+                padding: 0px 20px;
+                box-sizing: border-box;
+                text-align: center;
+            }
+        
+            .p {
+                width: 100%;
+            }
+        
+            .grid {
+                width: 100%;
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(1, minmax(100%, 1fr));
+                margin-bottom: 60px;
+            }
+        
+            .card {
+                width: 100%;
+                height: 100%;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        
+            .detailsWrapper {
+                width: 100%;
+                flex-direction: column;
+            }
+        
+            .content {
+                width: 100%;
+                align-items: center;
+            }
+        
+            .list {
+                width: 90%;
+                height: 100%;
+                min-height: 50px;
+                line-height: normal;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .imageContainer {
+                width: 90%;
+                margin-top: 20px;
+                margin-left: auto;
+            }
+}

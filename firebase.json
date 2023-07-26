@@ -1,0 +1,32 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/about",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/solutions",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/soho",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/partnership",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/contact",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

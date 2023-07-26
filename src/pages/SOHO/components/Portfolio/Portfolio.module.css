@@ -1,0 +1,138 @@
+.portfolio{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.wrapper{
+width: 90%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.h4{
+        color: #1BB7F1;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin: 0;
+}
+
+.h1{
+    font-size: 40px;
+        line-height: 48px;
+        color: #1e1666;
+            font-family: "Nunito";
+            font-weight: 800;
+            margin: 20px 0px 0px 0px;
+}
+
+.p{
+color: #57647c;
+font-size: 18px;
+    line-height: 24px;
+    font-family: "Nunito";
+        font-weight: 700;
+        width: 50%;
+        margin-bottom: 40px;
+}
+.grid {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, minmax(210px, 1fr));
+}
+.card{
+    /* width: 210px; */
+    /* height: 155px; */
+    max-width:210px;
+    max-height:155px;
+    padding: 50px 23px 61px 23px;
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 2.5px 4.33px 18px 2px rgba(96.00000000000018, 40, 172, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.cardHeading{
+    margin-bottom: 13px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1e1666;
+    text-align: center;
+}
+.iconContainer{
+    width: 35px;
+    height: 35px;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width:768px) and (max-width: 1200px) {}
+
+@media (min-width:576px) and (max-width: 768px) {
+    .wrapper {
+        padding: 0px 20px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .p{
+        width: 90%;
+    } 
+        .grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, minmax(100%, 1fr));
+            margin-top: 20px;
+        }
+        .card{
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+                padding: 50px 23px 61px 23px;
+                box-sizing: border-box;
+        }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .wrapper {
+            padding: 0px 20px;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    
+        .p {
+            width: 90%;
+        }
+    
+        .grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, minmax(100%, 1fr));
+            margin-top: 20px;
+        }
+    
+        .card {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            padding: 50px 23px 61px 23px;
+            box-sizing: border-box;
+        }
+}

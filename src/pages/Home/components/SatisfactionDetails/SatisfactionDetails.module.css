@@ -1,0 +1,129 @@
+.container{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin: 40px 0px 60px 0px;
+}
+.col1{
+width: 40%;
+display: flex;
+flex-direction: column;
+}
+.headingType{
+    color: #1e1666;
+    font-family: "Nunito";
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+    margin: 0;
+}
+.imageWrapper{
+width: 512px;
+height: 467px;
+
+}
+.featuredImage{
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+.col2{
+    width: 38%;
+}
+
+.slide {
+    width: 90%;
+    margin-right: 20px !important;
+    padding: 18px 35px;
+    background-size: 200%;
+    background-image: linear-gradient(to right,#cc2b5e 0%,#753a88 51%,#cc2b5e 100%);
+    border-radius: 8px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    transition: background-position 0.4s ease, box-shadow 0.4s ease, transform 0.5s ease;
+    padding-bottom: 30px;
+}
+
+.slideTitle {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Nunito";
+    font-weight: 800;
+}
+.slideDescription {
+    color: #fff;
+    line-height: 24px;
+    margin-top: 11px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "Nunito";
+    font-weight: 600;
+}
+.slideIcon {
+    opacity: 0.15;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    max-width: 60px;
+    max-height: 60px;
+    transform: rotate(2deg);
+}
+
+.slideIconImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slideDesignation {
+    font-family: "Nunito";
+    color: #fff;
+    opacity: .8;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 28px;
+    padding-top: 18px;
+}
+
+        @media (min-width:768px) and (max-width: 1200px) {}
+    
+        @media (min-width:576px) and (max-width: 768px) {
+          .container{
+            width: 100%;
+            flex-direction: column;
+          }
+          .col1{
+            width: 100%;
+            padding: 0px 20px;
+            box-sizing: border-box;
+          }
+          .col2{
+            width: 100%;
+            margin-top: 40px;
+          }
+        }
+    
+        @media only screen and (max-width: 576px) {
+            .container {
+                    width: 100%;
+                    flex-direction: column;
+                }
+            
+                .col1 {
+                    width: 100%;
+                    padding: 0px 20px;
+                    box-sizing: border-box;
+                }
+                        .imageWrapper {
+                            width: 100%;
+                            height: 100%;
+            
+                        }
+                .col2 {
+                    width: 100%;
+                    margin-top: 40px;
+                }
+        }

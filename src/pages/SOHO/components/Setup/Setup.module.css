@@ -1,0 +1,144 @@
+.container{
+width: 100%;
+height: 100%;
+background-color: transparent;
+background-image: linear-gradient(173deg, #0F054C 21%, #520C9C 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px 0px;
+margin-top: 40px;
+margin-bottom: 20px;
+}
+.wrapper{
+width: 90%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+    margin-bottom: 0px;
+    padding: 98px 0px 72px 0px;
+}
+.heading{
+    color: #FFFFFF;
+    font-size: 34px;
+    line-height: 48px;
+    font-family: "Nunito";
+    font-weight: 800;
+}
+.col1{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.imageContainer{
+width: 100%;
+height: 100%;
+}
+.image{
+width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.col2{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.grid{
+    width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 30px;
+}
+.card{
+width: 230px;
+height: 200px;
+background-color: #FFFFFF12;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.heading{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+    color: #FFFFFF;
+    font-family: 'Nunito';
+}
+
+.blue{
+    color: #1BB7F1;
+}
+@media (min-width:768px) and (max-width: 1200px) {}
+
+@media (min-width:576px) and (max-width: 768px) {
+   .wrapper{
+    width: 100%;
+    flex-direction: column;
+   }
+   .col1{
+    width: 100%;
+    text-align: center;
+   }
+   .heading{
+    width: 100%;
+    font-size: 48px;
+   }
+   .col2{
+    width: 100%;
+   }
+   .grid{
+    width: 100%;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+   }
+   .card{
+    width: 100%;
+    text-align: center;
+   }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .wrapper {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .col1 {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .heading {
+            width: 100%;
+            font-size: 48px;
+            line-height: normal;
+        }
+    
+        .col2 {
+            width: 100%;
+        }
+    
+        .grid {
+            width: 100%;
+            padding: 0px 30px;
+            box-sizing: border-box;
+            flex-direction: column;
+        }
+    
+        .card {
+            width: 100%;
+            text-align: center;
+        }
+}

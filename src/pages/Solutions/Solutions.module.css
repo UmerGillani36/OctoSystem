@@ -1,0 +1,14 @@
+/* .solutionsContainer {
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+  } */
+     @media (min-width:768px) and (max-width: 1200px) {}
+  
+     @media (min-width:576px) and (max-width: 768px) {
+     }
+  
+     @media only screen and (max-width: 576px) {}

@@ -1,0 +1,396 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  /* padding-top: 120px; */
+}
+
+.overlay {
+  width: 100%;
+  height: 1000px;
+  background-color: transparent;
+  background: linear-gradient(133deg, #000000 31%, #493278 100%);
+  opacity: 0.92;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px 0px;
+}
+
+.content {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+
+}
+
+.content h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.content p {
+  margin: 0;
+  margin-bottom: 8px;
+  color: white;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.form {
+  padding: 20px 40px;
+  width: 42%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  box-sizing: border-box;
+
+}
+
+.firstRow {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+    align-items: flex-start;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+
+.inputContainerFirst {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.input {
+  color: white;
+  font-size: 18pt;
+  font-weight: bold;
+  display: flex !important;
+  width: 100%;
+  height: 40px;
+  border: 2px solid white;
+  background: transparent;
+  /* outline:none; */
+}
+.redBorder {
+  border-color: red;
+}
+
+.action {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.action:hover {
+  background-color: white;
+  color: #493278;
+}
+
+.typeBody {
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.privacyPolicy {
+  color: #36d0dc;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+
+.label {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1%;
+  text-align: justify;
+}
+
+.errorMessage {
+  text-align: left;
+  margin-left: 50%;
+  position: relative;
+  background-color: red;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: -3%;
+  border-radius: 10px;
+}
+
+.errorMessage::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  border-top: 10px solid red;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+@media (min-width:768px) and (max-width: 1200px) {
+  .formContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    padding-bottom: 80px;
+  }
+
+  .content {
+    width: 80%;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    margin-top: 0;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 1050px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 1050px;
+    background-color: transparent;
+    background: linear-gradient(133deg, #000000 31%, #493278 100%);
+    opacity: 0.92;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .firstRow {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inputContainerFirst {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .inputContainer {
+    margin-bottom: 10px;
+
+  }
+
+  .label {
+    font-size: medium;
+  }
+
+  .errorMessage {
+    font-size: medium;
+    margin-left: 10%;
+    width: 50%;
+  }
+}
+@media (min-width:576px) and (max-width: 768px) {
+  .formContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 1190px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 1190px;
+    background-color: transparent;
+    background: linear-gradient(133deg, #000000 31%, #493278 100%);
+    opacity: 0.92;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .content {
+    width: 90%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .form {
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+  .typeBody {
+    flex-direction: column;
+  }
+
+
+  .content h1 {
+    font-size: 34px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .label {
+    font-size: medium;
+  }
+
+  .errorMessage {
+    font-size: medium;
+    margin-left: 20%;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .formContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 1190px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 1190px;
+    background-color: transparent;
+    background: linear-gradient(133deg, #000000 31%, #493278 100%);
+    opacity: 0.92;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .content {
+    width: 90%;
+    margin-bottom: 20px;
+    /* padding-top: 50px; */
+  }
+
+  .input{
+    width : 90%;
+    margin-left: 1.5%;
+  }
+
+  .form {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .typeBody {
+    flex-direction: column;
+  }
+
+  .content h1 {
+    font-size: 30px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .label{
+    font-size: smaller;
+  }
+
+  .errorMessage {
+    font-size: small;
+    margin-left: 20%;
+    margin-bottom: -5%;
+    width: 52%;
+  }
+}
+
+
+
+

@@ -1,0 +1,82 @@
+
+.container {
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* flex-wrap: wrap; */
+}
+
+.col1 {
+    width: 40%;
+    margin-right: 40px;
+}
+
+.scrollImage {
+    background-image: url('./../../../../assets/Solutions/area1.png');
+    height: 250px;
+    width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    /* background-color: rgba(0,0,0,0.5) ; */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.bgImage {
+    position: relative;
+    z-index: -11;
+}
+
+.col2 {
+    width: 40%;
+}
+
+.detailsHeading {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 34px;
+    color: #1e1666;
+}
+
+.detailsDescription {
+    color: #57647c;
+    font-family: "Nunito";
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+}
+  @media (min-width:768px) and (max-width: 1200px) {}
+
+  @media (min-width:576px) and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+    .col1{
+        width: 90%;
+    }
+    .col2{
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+        .container {
+                flex-direction: column;
+            }
+        
+            .col1 {
+                width: 90%;
+            }
+        
+            .col2 {
+                width: 90%;
+            }
+  }

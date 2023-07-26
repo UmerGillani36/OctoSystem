@@ -1,0 +1,115 @@
+.headerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  /* background-color: rgba(0,0,0,0.5); */
+}
+
+.other-header{
+  /* background-color: rgba(0,0,0,0.5); */
+}
+
+.solutions-header{
+  background-color: rgba(0,0,0,0);
+}
+
+.logo {
+  width: 100px;
+  height: auto; 
+  margin-left: 75px;
+  margin-top: 10px;
+}
+
+.imageLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.nav{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+}
+.navLinks {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.navLinks li {
+  margin-right: 30px; 
+}
+
+.navLinks li a {
+  text-decoration: none; 
+  color: #FFFFFF;
+  font-size: 16px;
+    font-weight: 600;
+}
+
+label {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically in the center */
+  text-decoration: none; 
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input {
+  display: none;
+}
+.selectContainer{
+  /* color: white; */
+  width: 150px;
+}
+.select{
+  border-color: white !important;
+  outline-color: white !important;
+  color: white;
+  font-weight: bold;
+}
+.select span{
+  color: white;
+}
+.language-flag {
+  width: 60px;
+  height: 35px;
+  margin-left: 5px;
+}
+
+.success-switch input:checked ~ .lever {
+  background-color: #4caf50;
+}
+
+/* Header.css */
+
+/* Add the following CSS rules to change the style of the selector */
+.ReactFlagsSelect {
+  border-color: white;
+  background-color: white;
+}
+
+/* Add the following CSS rule to change the style of the borders */
+.nav {
+  border-color: white;
+}
+
+.Slider {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .headerContainer{
+    display: none;
+  }
+  .Slider {
+    display: block;
+    /* Additional styles for the Slider component */
+    /* Add any necessary styles here */
+  }
+
+}

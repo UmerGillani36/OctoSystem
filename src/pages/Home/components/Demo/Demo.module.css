@@ -1,0 +1,81 @@
+.elementorWidgetContainer{
+    width:100%;
+    height:400px;
+    background-image:url("../../../../assets/Home/Demo/img17.png") ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+.elementorHeadingTitle{
+   color:#ffffff;
+   text-align: center;
+   width: 65%;
+   /* padding:80px 20px 20px 20px; */
+   font-size: 40px;
+   line-height: 48px;
+   font-family: "Nunito";
+}
+.elementorButtonText{
+   color:#ffffff;
+   flex-grow: 1;
+   order: 10;
+   display: inline-block;
+   text-decoration: inherit;    
+   font-family: "Nunito";
+   font-size: 15px;
+   line-height: 28px;
+   font-weight: 800;
+}
+.elementorButtonContainer{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.elementorButtonLink{
+   padding: 11px 57px 11px 57px;
+   background-size: 200%;
+   background-image: linear-gradient(to right,#cc2b5e 0%,#753a88 51%,#cc2b5e 100%);
+   border-radius: 30px;
+   display: inline-block;
+   position: relative;
+   box-sizing: border-box;
+   transition: background-position 0.4s ease, box-shadow 0.4s ease, transform 0.5s ease;
+   cursor: pointer;
+}
+.elementorButtonLink:hover{
+   background-position: right;
+   box-shadow: 0 8px 10px rgba(35, 24, 71, 0.8);
+   transform: translateY(-4px);
+}
+       @media (min-width:768px) and (max-width: 1200px) {}
+   
+       @media (min-width:576px) and (max-width: 768px) {
+       
+        .elementorWidgetContainer{
+         width: 100%;
+         height: 100%;
+         padding:20px;
+         box-sizing: border-box;
+        }
+        .elementorHeadingTitle{
+         width: 100%;
+        }
+       }
+   
+       @media only screen and (max-width: 576px) {
+         .elementorWidgetContainer {
+               width: 100%;
+               height: 100%;
+               padding: 20px;
+               box-sizing: border-box;
+            }
+         
+            .elementorHeadingTitle {
+               width: 100%;
+            }
+       }

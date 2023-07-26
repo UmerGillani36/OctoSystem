@@ -1,0 +1,132 @@
+/* Footer.module.css */
+.footer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1D225F;
+  width: 86%;
+  height: 205px;
+  margin: 10% auto;
+  padding: 70px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.left {
+  /* width: 50%; */
+  color: white;
+}
+
+
+.heading {
+  color: white;
+      font-size: 24px;
+        line-height: 36px;
+            font-family: "Nunito";
+            font-weight: 800;
+  margin: 0;
+}
+
+.subheading {
+  margin: 0;
+  font-family: "Nunito";
+    font-weight: 700;
+        line-height: 28px; 
+        color: #EEEEEE;
+          font-size: 16px;
+}
+
+
+.contactButton {
+  padding: 11px 57px 11px 57px;
+  background-size: 200%;
+  background-image: linear-gradient(to right, #cc2b5e 0%, #753a88 51%, #cc2b5e 100%);
+  border-radius: 30px;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  transition: background-position 0.4s ease, box-shadow 0.4s ease, transform 0.5s ease;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.contactButton:hover {
+  background-position: right;
+  box-shadow: 0 8px 10px rgba(35, 24, 71, 0.8);
+  transform: translateY(-4px);
+}
+
+@media (min-width:768px) and (max-width: 1200px) {}
+
+@media (min-width:576px) and (max-width: 768px) {
+  .footer {
+    padding: 0px 10px;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    padding: 50px 30px 50px 30px;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .heading {
+    margin-bottom: 10px;
+  }
+
+  .subheading {
+    margin-bottom: 10px;
+  }
+
+  .contactButton {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  .footer{
+    padding: 0px 10px;
+    box-sizing: border-box;
+  }
+.wrapper{
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+    padding: 50px 30px 50px 30px;
+  }
+  .left{
+    text-align: center;
+  }
+  .heading{
+    margin-bottom: 10px;
+  }
+  .subheading{
+    margin-bottom: 10px;
+  }
+  .contactButton{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+}
